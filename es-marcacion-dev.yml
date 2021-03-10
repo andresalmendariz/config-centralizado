@@ -1,21 +1,24 @@
 server:
-  port:  8071
+  port: 8079
+  
+  
 spring:
   datasource:
-    url: jdbc:postgresql://localhost/postgres
+    url: jdbc:postgresql://localhost:5433/GOTALENT
     username: postgres
-    password: admin
+    password: root
     driver-class-name: org.postgresql.Driver
-
+    
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       jdbc:
-       lob:
-        non_contextual_creational: true
+        lob:
+          non_contextual_creational: true
+
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: kafka:9093
     consumer:
       group-id: myGroup
