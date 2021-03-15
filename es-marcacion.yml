@@ -2,7 +2,7 @@ server:
   port:  8071
 spring:
   datasource:
-    url: jdbc:postgresql://localhost/postgres
+    url: jdbc:postgresql://localhost:50166/postgres
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
